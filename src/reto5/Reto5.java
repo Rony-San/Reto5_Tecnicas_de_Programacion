@@ -1,9 +1,8 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
+
 package reto5;
+
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
 
 public class Reto5 {
@@ -19,11 +18,19 @@ public class Reto5 {
         System.out.println(miPokemon.gritar());
         
         System.out.println("\n"+ miPokemon.getNombre() + " Esta evolucionando");
-        miPokemon = miPokemon.evolucionar();
+        try {
+            miPokemon = miPokemon.evolucionar();
+        } catch (NoEvolucionaException ex) {
+            Logger.getLogger(Reto5.class.getName()).log(Level.SEVERE, null, ex);
+        }
         System.out.println(miPokemon.gritar());
         
         System.out.println("\n"+ miPokemon.getNombre() + " Esta evolucionando");
-        miPokemon = miPokemon.evolucionar();
+        try {
+            miPokemon = miPokemon.evolucionar();
+        } catch (NoEvolucionaException ex) {
+            Logger.getLogger(Reto5.class.getName()).log(Level.SEVERE, null, ex);
+        }
         System.out.println(miPokemon.gritar());
         
         // Evolución Aquirtle
@@ -33,11 +40,19 @@ public class Reto5 {
         System.out.println(miNuevoPokemon.gritar());
         
         System.out.println("\n"+ miNuevoPokemon.getNombre() + " Esta evolucionando");
-        miNuevoPokemon = miNuevoPokemon.evolucionar();
+        try {
+            miNuevoPokemon = miNuevoPokemon.evolucionar();
+        } catch (NoEvolucionaException ex) {
+            Logger.getLogger(Reto5.class.getName()).log(Level.SEVERE, null, ex);
+        }
         System.out.println(miNuevoPokemon.gritar());
         
         System.out.println("\n"+ miNuevoPokemon.getNombre() + " Esta evolucionando");
-        miNuevoPokemon = miNuevoPokemon.evolucionar();
+        try {
+            miNuevoPokemon = miNuevoPokemon.evolucionar();
+        } catch (NoEvolucionaException ex) {
+            Logger.getLogger(Reto5.class.getName()).log(Level.SEVERE, null, ex);
+        }
         System.out.println(miNuevoPokemon.gritar());
         
         // Evolución Pikachu 
@@ -49,7 +64,11 @@ public class Reto5 {
         System.out.println(miPikachu.gritar());
         
         System.out.println("\n"+ miPikachu.getNombre() + " Esta evolucionando");
-        miPikachu = miPikachu.evolucionar();
+        try {
+            miPikachu = miPikachu.evolucionar();
+        } catch (NoEvolucionaException ex) {
+            Logger.getLogger(Reto5.class.getName()).log(Level.SEVERE, null, ex);
+        }
         System.out.println(miPikachu.gritar());
         
         // pokebolas 

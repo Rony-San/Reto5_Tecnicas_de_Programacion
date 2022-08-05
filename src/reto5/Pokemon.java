@@ -7,7 +7,7 @@ public abstract class Pokemon {
     protected char nivel;
     protected int salud;
     
-    public abstract Pokemon evolucionar();
+    public abstract Pokemon evolucionar() throws NoEvolucionaException;
     public abstract String gritar();
 
 
